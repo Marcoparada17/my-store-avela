@@ -69,10 +69,11 @@ export default function Navbar() {
             Instagram
           </a>
 
+          {/* WHATSAPP MOBILE BUTTON (FIX) */}
           <a
             href="https://wa.link/cd114w"
             target="_blank"
-            style={{ ...whatsapp, width: "100%", marginTop: 10 }}
+            style={whatsappMobile}
           >
             Comprar
           </a>
@@ -140,6 +141,21 @@ const whatsapp: React.CSSProperties = {
   textDecoration: "none",
   fontWeight: "bold",
   whiteSpace: "nowrap",
+};
+
+/* 🔥 WHATSAPP MOBILE — botón más pequeño */
+const whatsappMobile: React.CSSProperties = {
+  background: "#25D366",
+  padding: "8px 0",
+  borderRadius: 6,
+  color: "white",
+  textDecoration: "none",
+  fontWeight: "bold",
+  fontSize: "0.95rem",
+  width: "50%",
+  textAlign: "center",
+  marginTop: 10,
+  boxSizing: "border-box",
 };
 
 const hamburgerBtn: React.CSSProperties = {
